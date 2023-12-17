@@ -10,36 +10,40 @@ function Navbar() {
     setIsNavOpen(!isNavOpen);
   };
 
+  const closeNav = () => {
+    setIsNavOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <Link to="/" className="logo-link">
         <img src={logo} alt="" id="logo" />
       </Link>
       <div className={`navbar-Toggler ${isNavOpen ? 'open' : ''}`} onClick={toggleNav}>
-  <div className='lineOne'></div>
-  <div className='lineTwo'></div>
-  <div className='lineThree'></div>
-</div>
+        <div className='lineOne'></div>
+        <div className='lineTwo'></div>
+        <div className='lineThree'></div>
+      </div>
 
       <div className={`navbar-nav ${isNavOpen ? 'open' : ''}`}>
         <ul>
           <li>
-            <Link to="/service" className="link" onClick={toggleNav}>
+            <Link to="/service" className="link" onClick={closeNav}>
               SERVICES
             </Link>
           </li>
           <li>
-            <Link to="/about" className="link" onClick={toggleNav}>
+            <Link to="/about" className="link" onClick={closeNav}>
               ABOUT US
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="link" onClick={toggleNav}>
+            <Link to="/contact" className="link" onClick={closeNav}>
               CONTACT US
             </Link>
           </li>
           <li>
-            <Link to="/careers" className="link" onClick={toggleNav}>
+            <Link to="/careers" className="link" onClick={closeNav}>
               CAREERS
             </Link>
           </li>
