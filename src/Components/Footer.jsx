@@ -52,15 +52,17 @@ function Footer() {
             <h2 className="mb-2  text-[21px]  text-left font-semibold vsm:mt-7 text-white uppercase">
               Follow us
             </h2>
-            <ul className=" text-white font-medium text-sm ">
+            <ul className="text-white font-medium text-sm">
               <li className="">
                 <Link to="" className="leading-8">
                   Social media Marketing
                 </Link>
               </li>
               <li>
-                <Link to="" className="leading-5">
-                  Web & Mobile App <br /> Development
+                <Link to="" className="leading-8">
+                  Web & Mobile App{" "}
+                  <br className="lg:hidden md:hidden sm:hidden vsm:hidden xl:inline" />{" "}
+                  Development
                 </Link>
               </li>
               <li>
