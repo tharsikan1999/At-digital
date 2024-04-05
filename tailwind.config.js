@@ -6,6 +6,7 @@ module.exports = {
       screens: { vsm: { max: "640px" } },
       colors: {
         customPurple: "#6B3CC9",
+        lightPurple: "#FAF8FF",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
