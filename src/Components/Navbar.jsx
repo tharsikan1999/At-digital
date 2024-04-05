@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-customPurple max-w-[1440px] mx-auto">
+    <nav className="bg-customPurple max-w-[1440px] mx-auto xl:pr-10 md:pr-5 sm:pr-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/">
           <img
@@ -22,19 +22,19 @@ function Navbar() {
 
         <button
           onClick={toggleMenu}
-          className="inline-flex items-center p-2  justify-center text-sm w-[31px] h-[24px]  md:hidden dark:text-gray-400"
+          className="inline-flex items-center p-2 justify-center text-sm w-[40px] h-[40px] md:hidden dark:text-gray-400"
           aria-controls="navbar-default"
           aria-expanded={isOpen ? "true" : "false"}
           style={{
             gap: "0px",
-            borderRadius: "5px 0px 0px 0px",
+            borderRadius: "0px 5px 0px 0px",
             opacity: "0px",
           }}
         >
           <span className="sr-only">Toggle menu</span>
           {isOpen ? (
             <svg
-              className="w-5 h-5 text-white"
+              className="w-16 h-16 text-black"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -50,7 +50,7 @@ function Navbar() {
             </svg>
           ) : (
             <svg
-              className=" text-white"
+              className="text-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -68,15 +68,85 @@ function Navbar() {
         </button>
 
         <div
-          className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
-          id="navbar-default"
+          className={`fixed inset-0 z-10 transition-opacity ${
+            isOpen ? "opacity-100" : "opacity-0"
+          } md:hidden`}
         >
-          <ul className="font-inter font-medium text-white text-body1 leading-body1 flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+          <div className="bg-gray-800 bg-opacity-75 absolute inset-0"></div>
+          <div className="h-full bg-white fixed top-0 right-0 w-screen shadow-md transform transition-transform ease-in-out duration-300">
+            <div className="flex justify-end mt-4 mr-4">
+              <button
+                onClick={toggleMenu}
+                className="text-white focus:outline-none"
+              >
+                <svg
+                  className="w-10 h-10 text-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <ul className="mt-8 font-medium font-inter">
+              <li>
+                <Link
+                  to="/"
+                  className="block py-2  sm:mb-4  vsm:mb-4 px-3 text-black hover:text-gray-300 transition-transform transform hover:scale-105"
+                  aria-current="page"
+                >
+                  HOME
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="block py-2 sm:mb-4 vsm:mb-4 px-3  font-inter text-black hover:text-gray-300 transition-transform transform hover:scale-105"
+                >
+                  SERVICES
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className="block py-2  px-3 sm:mb-4 vsm:mb-4 text-black hover:text-gray-300 transition-transform transform hover:scale-105"
+                >
+                  ABOUT US
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="block py-2  px-3 sm:mb-4 vsm:mb-4 text-black hover:text-gray-300 transition-transform transform hover:scale-105"
+                >
+                  CONTACT US
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/careers"
+                  className="block py-2 px-3  sm:mb-4 vsm:mb-4 text-black hover:text-gray-300 transition-transform transform hover:scale-105"
+                >
+                  CAREERS
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="hidden font-inter font-medium md:flex md:items-center md:justify-end md:flex-1 lg:w-auto">
+          <ul className="md:flex md:space-x-8">
             <li>
               <Link
                 to="/services"
-                className="block py-2 px-3 rounded  md:p-0 dark:text-white"
-                aria-current="page"
+                className="text-white hover:text-gray-300 transition-transform transform hover:scale-105"
               >
                 SERVICES
               </Link>
@@ -84,7 +154,7 @@ function Navbar() {
             <li>
               <Link
                 to="/about"
-                className="block py-2 px-3  md:border-0 md:p-0 dark:text-white "
+                className="text-white hover:text-gray-300 transition-transform transform hover:scale-105"
               >
                 ABOUT US
               </Link>
@@ -92,7 +162,7 @@ function Navbar() {
             <li>
               <Link
                 to="/contact"
-                className="block py-2 px-3  md:border-0 md:p-0 dark:text-white "
+                className="text-white hover:text-gray-300 transition-transform transform hover:scale-105"
               >
                 CONTACT US
               </Link>
@@ -100,7 +170,7 @@ function Navbar() {
             <li>
               <Link
                 to="/careers"
-                className="block py-2 px-3  md:border-0 md:p-0 dark:text-white "
+                className="text-white hover:text-gray-300 transition-transform transform hover:scale-105"
               >
                 CAREERS
               </Link>

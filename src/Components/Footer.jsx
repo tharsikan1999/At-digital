@@ -20,29 +20,41 @@ function Footer() {
             business results.
           </p>
         </div>
-        <div className=" font-inter  flex w-[522px] lg:h-[141px] justify-between vsm:flex-col lg:ml-10 sm:ml-0 vsm:ml-0">
+        <div className=" font-inter  flex w-[522px] vsm:w-auto lg:h-[141px] justify-between vsm:flex-col lg:ml-10 sm:ml-0 vsm:ml-0 ">
           <div>
             <h2 className="mb-2  text-[21px] text-left font-semibold  text-white uppercase">
               Our Technologies
             </h2>
             <ul className=" text-white font-medium text-sm leading-8 ">
               <li className="">
-                <Link to="" className="">
+                <Link
+                  to=""
+                  className="inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
+                >
                   ReactJS
                 </Link>
               </li>
               <li>
-                <Link to="" className="">
+                <Link
+                  to=""
+                  className="inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
+                >
                   Gatsby
                 </Link>
               </li>
               <li>
-                <Link to="" className="">
+                <Link
+                  to=""
+                  className="inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
+                >
                   NextJS
                 </Link>
               </li>
               <li>
-                <Link to="" className="">
+                <Link
+                  to=""
+                  className="inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
+                >
                   NodeJS
                 </Link>
               </li>
@@ -54,19 +66,28 @@ function Footer() {
             </h2>
             <ul className="text-white font-medium text-sm">
               <li className="">
-                <Link to="" className="leading-8">
+                <Link
+                  to=""
+                  className="leading-8 inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
+                >
                   Social media Marketing
                 </Link>
               </li>
               <li>
-                <Link to="" className="leading-8">
+                <Link
+                  to=""
+                  className="leading-8 inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
+                >
                   Web & Mobile App{" "}
                   <br className="lg:hidden md:hidden sm:hidden vsm:hidden xl:inline" />{" "}
                   Development
                 </Link>
               </li>
               <li>
-                <Link to="" className="leading-8">
+                <Link
+                  to=""
+                  className="leading-8 inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
+                >
                   Data & Analytics
                 </Link>
               </li>
@@ -75,14 +96,19 @@ function Footer() {
         </div>
       </div>
       <hr className=" border-1 lg:mt-20 border-white-700 sm:mx-auto my-2 lg:w-1/2 md:w-3/4 sm:w-full" />
-
-      <div className="flex font-inter font-medium text-sm  justify-center  text-white">
-        <span className="text-sm ">
-          <Link to="/" className="mr-5">
+      <div className="flex font-inter font-medium text-sm justify-center text-white">
+        <span className="text-sm">
+          <Link
+            to="/"
+            className="inline-block hover:text-gray-300 transition-transform transform hover:scale-105 mr-5"
+          >
             Privacy Policy
           </Link>
           <span className="w-4">|</span>
-          <Link to="/" className="ml-5">
+          <Link
+            to="/"
+            className="ml-5 inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
+          >
             Terms & Conditions
           </Link>
         </span>

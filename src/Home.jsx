@@ -2,19 +2,22 @@ import React from "react";
 import imgOne from "./Resources/Img/image 2.png";
 import imgTwo from "./Resources/Img/image 1.png";
 import Button from "./Components/Button";
+import backgroundImg from "./Resources/Img/background.png";
 
 function Home() {
   return (
     <>
-      <section className="max-w-[1440px] h-[700px] mx-auto  bg-no-repeat  bg-center bg-[url('./Resources/Img/background.png')] relative aspect-w-16 aspect-h-7 ">
-        <div className="md:hidden sm:hidden vsm:hidden lg:block xl:w-[630px] lg:w-[622px] md:left-0 h-[306px] bg-gradient-to-r from-customGreen to-customBlue pt-6  pb-8 pl-10 pr-10 text-white absolute lg:left-20 lg:bottom-10 md:bottom-[0px] sm:bottom-[0px] vsm:bottom-[0px] flex flex-col justify-center vsm:pr-10 ">
+      <div className="max-w-[1440px] mx-auto relative">
+        <img src={backgroundImg} className="w-auto h-auto relative" alt="" />
+        <div className="md:hidden sm:hidden vsm:hidden lg:block absolute xl:bottom-10 lg:bottom-8 left-[60px] xl:w-[630px] lg:w-[622px] h-[306px] bg-gradient-to-r from-customGreen to-customBlue p-6 text-white">
           <h1 className="font-inter font-bold text-5xl leading-[48px] vsm:text-3xl mb-5 tracking-wide">
             We crush your competitors, goals, and sales records - without the
             B.S.
           </h1>
           <Button />
         </div>
-      </section>
+      </div>
+
       <section className="max-w-[1440px] mx-auto  min-h-screen flex flex-col items-center lg:py-14 md:py-0  ">
         <div className=" lg:hidden md:left-0 h-[306px] bg-gradient-to-r from-customGreen to-customBlue pt-6  pb-8 pl-10 pr-10 text-white  lg:left-20 lg:bottom-10 md:bottom-[0px] sm:bottom-[0px] vsm:bottom-[0px] flex flex-col justify-center vsm:pr-10 md:bottom-[-306px] sm:bottom-[-306px] vsm:bottom-[-306px]">
           <h1 className="font-inter font-bold text-5xl leading-[48px] vsm:text-3xl mb-5 tracking-wide">
