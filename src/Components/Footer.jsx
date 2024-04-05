@@ -4,7 +4,7 @@ import logo from "../Resources/Img/Logo.png";
 
 function Footer() {
   return (
-    <footer className="bg-customPurple lg:pt-10  md:px-10 vsm:px-5 sm:px-5 pt-10 pb-5 mx-auto w-full  ">
+    <footer className="bg-customPurple lg:pt-10  md:px-10 vsm:px-5 sm:px-5 pt-10 pb-5 max-w-[1440px] mx-auto  ">
       <div className="md:flex md:justify-between mb-16 ">
         <div className="mb-6 md:mb-0 ">
           <Link to="/" className="flex items-center">

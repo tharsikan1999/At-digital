@@ -15,10 +15,10 @@ function Questions() {
   };
 
   return (
-    <div className="container my-24 mx-auto md:px-6 xl:px-24 vsm:px-6">
+    <div className="container max-w-[896px] xl:w-[846px] lg:[896px]  my-24 lg:my-0 md:my-0 sm:px-8 vsm:px-6 mx-auto vsm:px-6 ">
       <section className="mb-32">
         <h2
-          className="text-customPurple  text-[27px] mb-6 pl-6 text-3xl font-semibold leading-8 text-center"
+          className="text-customPurple  text-[27px] mb-8 pl-6 text-3xl font-semibold leading-8 text-center"
           style={{
             fontFamily: "Poppins",
             letterSpacing: "0.4px",

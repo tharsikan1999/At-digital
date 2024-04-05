@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-customPurple">
+    <nav className="bg-customPurple max-w-[1440px] mx-auto">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/">
           <img

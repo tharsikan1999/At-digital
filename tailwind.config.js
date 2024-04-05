@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -8,6 +7,8 @@ module.exports = {
         customPurple: "#6B3CC9",
         lightPurple: "#FAF8FF",
         customOrange: "#F28D35",
+        customGreen: "#1CBDDD",
+        customBlue: "#4DCA79",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
