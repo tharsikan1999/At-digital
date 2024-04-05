@@ -1,0 +1,21 @@
+/* Navbar styles */
+.navbar {
+  background-color: #6d28d9; /* Your customPurple color */
+}
+
+/* Mobile Navbar styles */
+.mobile-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: white;
+  z-index: 999; /* Ensure it's above other content */
+  transition: transform 0.3s ease-in-out; /* Add transition effect */
+  transform: translateX(100%); /* Initially hide it off-screen */
+}
+
+.mobile-navbar.open {
+  transform: translateX(0); /* Move it to the screen when open */
+}

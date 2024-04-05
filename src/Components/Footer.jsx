@@ -54,17 +54,17 @@ function Footer() {
             </h2>
             <ul className=" text-white font-medium text-sm ">
               <li className="">
-                <Link to="" className="leading-7">
+                <Link to="" className="leading-8">
                   Social media Marketing
                 </Link>
               </li>
               <li>
-                <Link to="" className="">
+                <Link to="" className="leading-5">
                   Web & Mobile App <br /> Development
                 </Link>
               </li>
               <li>
-                <Link to="" className="leading-5">
+                <Link to="" className="leading-8">
                   Data & Analytics
                 </Link>
               </li>
