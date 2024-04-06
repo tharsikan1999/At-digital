@@ -3,21 +3,23 @@ import React, { useState } from "react";
 function Questions() {
   const [faqs, setFaqs] = useState([
     {
-      question: "Lorem ipsum dolor sit amet consectetur?",
+      question: "Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, soluta!",
+        "Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.",
       isOpen: false,
     },
     {
-      question: "Quisquam repudiandae quam nam dolore?",
+      question:
+        "Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?",
       answer:
-        "Quisquam repudiandae quam nam dolore! Eum libero esse autem magni quam.",
+        "Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.",
       isOpen: false,
     },
     {
-      question: "Iure distinctio est accusantium similique?",
+      question:
+        "Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?",
       answer:
-        "Iure distinctio est accusantium similique? Consequatur rem eaque unde!",
+        "Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.",
       isOpen: false,
     },
   ]);
@@ -42,7 +44,7 @@ function Questions() {
             <div className="rounded-none bg-lightPurple mb-5" key={index}>
               <h2
                 className={`mb-0 ${
-                  faq.isOpen ? "text-black" : "text-customPurple"
+                  faq.isOpen ? "text-customPurple" : "text-black"
                 } font-medium`}
               >
                 <button

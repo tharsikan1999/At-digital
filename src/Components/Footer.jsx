@@ -4,8 +4,8 @@ import logo from "../Resources/Img/Logo.png";
 
 function Footer() {
   return (
-    <footer className="bg-customPurple lg:pt-10  md:px-10 vsm:px-5 sm:px-5 pt-10 pb-5 max-w-[1440px] mx-auto  ">
-      <div className="md:flex md:justify-between mb-16 ">
+    <footer className="bg-customPurple lg:pt-10  md:px-10 vsm:px-5 sm:px-5 pt-10 pb-5 max-w-[1440px] mx-auto   ">
+      <div className="md:flex md:justify-between mb-16">
         <div className="mb-6 md:mb-0 ">
           <Link to="/" className="flex items-center">
             <img
@@ -20,15 +20,15 @@ function Footer() {
             business results.
           </p>
         </div>
-        <div className=" font-inter  flex w-[522px] vsm:w-auto lg:h-[141px] justify-between vsm:flex-col lg:ml-10 sm:ml-0 vsm:ml-0 ">
-          <div>
+        <div className=" font-inter  flex w-[522px] vsm:w-auto lg:h-[141px] justify-between vsm:flex-col lg:ml-10 sm:ml-0  vsm:ml-0 ">
+          <div className="">
             <h2 className="mb-2  text-[21px] text-left font-semibold  text-white uppercase">
               Our Technologies
             </h2>
             <ul className=" text-white font-medium text-sm leading-8 ">
               <li className="">
                 <Link
-                  to=""
+                  to="/"
                   className="inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
                 >
                   ReactJS
@@ -36,7 +36,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/"
                   className="inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
                 >
                   Gatsby
@@ -44,7 +44,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/"
                   className="inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
                 >
                   NextJS
@@ -52,7 +52,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/"
                   className="inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
                 >
                   NodeJS
@@ -67,7 +67,7 @@ function Footer() {
             <ul className="text-white font-medium text-sm">
               <li className="">
                 <Link
-                  to=""
+                  to="/"
                   className="leading-8 inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
                 >
                   Social media Marketing
@@ -75,7 +75,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/"
                   className="leading-8 inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
                 >
                   Web & Mobile App{" "}
@@ -85,7 +85,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/"
                   className="leading-8 inline-block hover:text-gray-300 transition-transform transform hover:scale-105"
                 >
                   Data & Analytics
